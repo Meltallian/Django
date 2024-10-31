@@ -1,0 +1,14 @@
+Starter commands:
+pip install virtualenv
+/home/jbidaux/.local/bin/virtualenv env
+
+. env/bin/activate
+This command activates the virtual environment. Upon activation, the shell’s prompt might change to include the name of the activated environment (in this case, (env)), 
+and it modifies the environment variables such as PATH so that the Python interpreter and scripts within the env directory are used in preference to the system-wide Python installation. 
+This means that when you invoke Python or install new packages using pip, it will operate in the context of the virtual environment.
+
+We remove db.sqlite3 because we'll use Postgres
+
+In the dockerfile, WORKDIR "sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it. 
+If the specified working directory doesn't exist, it will create it with the necessary permissions before proceeding with the rest of the Dockerfile's commands. 
+This behavior effectively makes WORKDIR function similarly to the mkdir -p command, ensuring that the directory exists."
