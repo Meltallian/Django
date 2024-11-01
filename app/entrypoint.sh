@@ -17,3 +17,9 @@ python manage.py flush --no-input
 python manage.py migrate
 
 exec "$@"
+
+
+Dic["key"] = "swag";
+
+
+Dic.find("key")
